@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-PushTestTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-PushTestTask.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		35E0C17E7BD64F02999C73D5 /* NotoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D06AA7562EFB4657A4EE1B0F /* NotoSans-Light.ttf */; };
+		4DB34C83D14E439CB94946E2 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7756238F0F24183A71AB6CC /* NotoSans-Regular.ttf */; };
+		4E56FA60C58042159C877165 /* NotoSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4532820A44134E16AB8B7477 /* NotoSans-Thin.ttf */; };
+		5C9DCF66FC8942B992511B14 /* NotoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DAACBE9E61445B89F0A14EA /* NotoSans-ExtraLight.ttf */; };
+		66B31DB0E75C459EA4DC1E6D /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DBB16A058748DC8E18388A /* NotoSans-Medium.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AFC6F3F063B7415EB39F16C9 /* NotoSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 535F91AF867945948B1442DD /* NotoSans-SemiBold.ttf */; };
+		EF7285690E5A45CABE3F2B75 /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98557F56B39450DBE1E760B /* NotoSans-ExtraBold.ttf */; };
+		F04A43A6EB1B48DCA27C9F6B /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1DEB7CC589B4324872353BD /* NotoSans-Bold.ttf */; };
 		FC71547B6D5E535EF53F943B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06DBB16A058748DC8E18388A /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Medium.ttf"; path = "../src/assets/fonts/NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* PushTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PushTestTask/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PushTestTask/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = PushTestTask/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-PushTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTestTask.debug.xcconfig"; path = "Target Support Files/Pods-PushTestTask/Pods-PushTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		3DAACBE9E61445B89F0A14EA /* NotoSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-ExtraLight.ttf"; path = "../src/assets/fonts/NotoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4532820A44134E16AB8B7477 /* NotoSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Thin.ttf"; path = "../src/assets/fonts/NotoSans-Thin.ttf"; sourceTree = "<group>"; };
+		535F91AF867945948B1442DD /* NotoSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-SemiBold.ttf"; path = "../src/assets/fonts/NotoSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-PushTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushTestTask.release.xcconfig"; path = "Target Support Files/Pods-PushTestTask/Pods-PushTestTask.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-PushTestTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PushTestTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PushTestTask/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PushTestTask/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C98557F56B39450DBE1E760B /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-ExtraBold.ttf"; path = "../src/assets/fonts/NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D06AA7562EFB4657A4EE1B0F /* NotoSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Light.ttf"; path = "../src/assets/fonts/NotoSans-Light.ttf"; sourceTree = "<group>"; };
+		E1DEB7CC589B4324872353BD /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Bold.ttf"; path = "../src/assets/fonts/NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		E7756238F0F24183A71AB6CC /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "NotoSans-Regular.ttf"; path = "../src/assets/fonts/NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -67,6 +83,22 @@
 			name = Libraries;
 			sourceTree = "<group>";
 		};
+		837A0847D3E04BA48C3E556B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7756238F0F24183A71AB6CC /* NotoSans-Regular.ttf */,
+				06DBB16A058748DC8E18388A /* NotoSans-Medium.ttf */,
+				E1DEB7CC589B4324872353BD /* NotoSans-Bold.ttf */,
+				4532820A44134E16AB8B7477 /* NotoSans-Thin.ttf */,
+				535F91AF867945948B1442DD /* NotoSans-SemiBold.ttf */,
+				D06AA7562EFB4657A4EE1B0F /* NotoSans-Light.ttf */,
+				3DAACBE9E61445B89F0A14EA /* NotoSans-ExtraLight.ttf */,
+				C98557F56B39450DBE1E760B /* NotoSans-ExtraBold.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +107,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				837A0847D3E04BA48C3E556B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +194,14 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				FC71547B6D5E535EF53F943B /* PrivacyInfo.xcprivacy in Resources */,
+				4DB34C83D14E439CB94946E2 /* NotoSans-Regular.ttf in Resources */,
+				66B31DB0E75C459EA4DC1E6D /* NotoSans-Medium.ttf in Resources */,
+				F04A43A6EB1B48DCA27C9F6B /* NotoSans-Bold.ttf in Resources */,
+				4E56FA60C58042159C877165 /* NotoSans-Thin.ttf in Resources */,
+				AFC6F3F063B7415EB39F16C9 /* NotoSans-SemiBold.ttf in Resources */,
+				35E0C17E7BD64F02999C73D5 /* NotoSans-Light.ttf in Resources */,
+				5C9DCF66FC8942B992511B14 /* NotoSans-ExtraLight.ttf in Resources */,
+				EF7285690E5A45CABE3F2B75 /* NotoSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6HT5858T5;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PushTestTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -290,6 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6HT5858T5;
 				INFOPLIST_FILE = PushTestTask/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
