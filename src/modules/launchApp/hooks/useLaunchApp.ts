@@ -1,11 +1,10 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useAppContext } from '../../../appContext/AppContext';
-import { storage } from '../../../storage';
+import { storage, STORAGE_KEYS } from '../../../storage';
 import { Tokens } from '../../../shared/types';
 import { mappedUser } from '../../../helpers/mappedUser';
 import { useAuthMeQuery } from './useAuthMeQuery';
 import { useCheckTokens } from './useCheckTokens';
-import { useRefreshTokenMutation } from './useRefreshTokenMutation';
 
 export const useLaunchApp = () => {
     const { changeAppState, handleUserData, isNetworkConnected } = useAppContext();
@@ -19,32 +18,20 @@ export const useLaunchApp = () => {
 
     const dataMe = useAuthMeQuery({ isNetworkConnected, accessToken: tokens?.accessToken });
 
-    const { isIdleRefreshToken, refreshTokenMutation } = useRefreshTokenMutation({
-        tokens,
-        setTokens,
-        onFinishLaunch,
-    });
-
     useEffect(() => {
         if (dataMe.isSuccess && dataMe.data && tokens) {
-            const user = mappedUser(dataMe.data, tokens);
-            handleUserData(user);
-            onFinishLaunch();
+            const handleSuccess = async () => {
+                const actualTokens = await storage.getItem<Tokens>(STORAGE_KEYS.authTokens);
+                const user = mappedUser(dataMe.data, actualTokens || tokens);
+
+                handleUserData(user);
+                onFinishLaunch();
+            };
+
+            handleSuccess();
         } else if (dataMe.isError) {
             if (!isNetworkConnected) {
                 return;
-            }
-            const isUnauthorizedError = dataMe.error.isAxiosError && dataMe.error?.status === 401;
-
-            if (isUnauthorizedError && tokens?.refreshToken) {
-                if (isIdleRefreshToken) {
-                    refreshTokenMutation();
-                }
-                return;
-            }
-
-            if (isUnauthorizedError) {
-                storage.removeItem('authTokens');
             }
 
             onFinishLaunch();
@@ -57,8 +44,6 @@ export const useLaunchApp = () => {
         onFinishLaunch,
         handleUserData,
         tokens,
-        isIdleRefreshToken,
-        refreshTokenMutation,
         isNetworkConnected,
     ]);
 
